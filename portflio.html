@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portflio.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Anush Kumar H.S</h1>
+        <p>BCA Student | Web Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="ak.png" alt="Profile Photo" width="150"></img>
+            <div class="about-text">
+                <p id="about-text">
+                    My name is Anush Kumar H.S., and I am currently pursuing
+                    the 5th semester of my Bachelor of Computer Applications
+                    (BCA). I am passionate about the IT field, with a strong
+                    interest in both front-end and back-end development. I enjoy
+                    learning new technologies, improving my technical and
+                    problem-solving skills, and building practical projects that
+                    strengthen my knowledge. I am eager to begin my
+                    professional journey, contribute to a dynamic organization,
+                    and continue growing as a full-stack developer while
+                    delivering quality solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="edu-skill-container">
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><b>S.S.L.C:</b><br>G.H.S Yadur <br>91.52%</li><br>
+                <li><b>P.U.C:</b><br>G.P.U.C Thirthahalli <br>88.66%</li><br>
+                <li><b>B.C.A:</b><br>G.F.G.C Thirthahalli <br>CGPA: 8.29(3rd sem)</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C Programming</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+        </section>
+        <section id="language">
+            <h2>Know Languages</h2>
+            <ul>
+                <li>Kannada</li>
+                <li>English</li>
+                <li>Hindi</li>
+            </ul>
+        </section>
+    </div>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mail to: anushkumar67845@gmail.com">anushkumar67845@gmail.com</p></a>
+        <p>Phone: <a href="tel:+919448862665">+91 9448862665</p></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Anush Kumar H.S. All Rights Reserved.</p>
+    </footer>
+<script>window.addEventListener("DOMContentLoaded", () => {
+  const aboutText = document.getElementById("about-text");
+  const fullText = aboutText.textContent;
+  let i = 0;
+
+  aboutText.textContent = ""; // clear text initially
+  aboutText.classList.add("typing");
+
+  function typeChar() {
+    if (i < fullText.length) {
+      aboutText.textContent += fullText.charAt(i);
+      i++;
+      setTimeout(typeChar, 30); // typing speed (ms per character)
+    } else {
+      aboutText.classList.remove("typing"); // remove cursor after typing finishes
+    }
+  }
+
+  typeChar(); // start typing immediately on page load
+});
+
+</script>
+</body>
+
+</html>

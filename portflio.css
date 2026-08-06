@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("back1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: #393939;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: transparent;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section:hover {
+    color: rgb(0, 255, 221);
+    border-left: 5px solid rgb(0, 255, 221);
+    background-color: #00000099;
+    font-size: larger;
+    font-style: italic;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.edu-skill-container {
+    display: flex;
+    width: 100%;
+}
+
+#education,
+#skills,
+#language {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media(max-width:768px) {
+    .edu-skill-container {
+        flex-direction: column;
+    }
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 15px;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+
+ul {
+    list-style-type: disc;
+}
+
+footer {
+    background-color: #393939;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.typing {
+  border-right: 3px solid rgb(0, 255, 221);
+  white-space: pre-wrap;
+  overflow: hidden;
+}
